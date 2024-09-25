@@ -13,14 +13,6 @@
 ③、SEO框架布局，栏目及文章页均可独立设置标题/关键词/描述。<br/>
 ④、网站后台可直接修改联系方式、地址、版权信息，统计代码等，修改更加方便。<br/>
 
-# 关于我们
-1.猿社区ApeHub，专为外贸企业与初创企业提供独立站解决方案社区。我们汇聚技术精英，提供前沿的底层建设方案，助力微创/出海企业构建高效、安全的网站<br/>
-2.不定期gitee和github官网号更新免费全开源模板，有兴趣请帮点一下 **Star** 哦<br/>
-3.**客服微信：yuansequ 有技术交流群可以联系客服加入，长期有资深开发者提供答疑**<br/>
-
-<img src="https://gitee.com/apehub/ChemicalIndustry/raw/master/kefu.jpg"  width="284.5" height="284.5"/>
-
-
 # 更多源码
 1.更多500套高级源码可以选购，更多案例查看：https://kdocs.cn/l/ceE9t0WJiSaH <br/>
 2.高级源码和商务合作可以联系淘宝小店链接：https://shop398787089.taobao.com/ <br/>
@@ -41,3 +33,11 @@
 
 # 系统免费域名授权
 PbootCMS：https://www.pbootcms.com/freesn/
+
+
+# 关于我们
+1.猿社区ApeHub，专为外贸企业与初创企业提供独立站解决方案社区。我们汇聚技术精英，提供前沿的底层建设方案，助力微创/出海企业构建高效、安全的网站<br/>
+2.不定期gitee和github官网号更新免费全开源模板，有兴趣请帮点一下 **Star** 哦<br/>
+3.**客服微信：yuansequ 有技术交流群可以联系客服加入，长期有资深开发者提供答疑**<br/>
+
+<img src="https://gitee.com/apehub/ChemicalIndustry/raw/master/kefu.jpg"  width="284.5" height="284.5"/>
