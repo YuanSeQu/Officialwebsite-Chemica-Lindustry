@@ -18,7 +18,7 @@
 * 不定期gitee和github官网号更新免费全开源模板，有兴趣请帮点一下 **Star** 哦
 * **客服微信：yuansequ 有技术交流群可以联系客服加入，长期有资深开发者提供答疑**
 
-![输入图片说明](https://gitee.com/apehub/ChemicalIndustry/raw/master/kefu.jpg)
+![输入图片说明](https://gitee.com/apehub/ChemicalIndustry/raw/master/kefu.jpg width="184.5" height="184.5" /)
 
 
 # 更多源码
