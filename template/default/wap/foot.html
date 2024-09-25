@@ -1,0 +1,30 @@
+<section class="toTop"></section>
+<!--版权开始-->
+<footer class="footer_main">
+  <p>{pboot:sitecopyright}</p>
+  <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">{pboot:siteicp}</a>　 </p>
+</footer>
+<!--版权结束--> 
+
+<!--底部图标开始-->
+<section id="toolbar">
+  <ul class="list clearfix">
+    <li><a href="{pboot:sitedomain}/" class="hover"><s class="too-home icon"></s><span>首页</span></a></li>
+    <li><a href="tel:{pboot:companyphone}"><s class="too-tel icon"></s><span>电话咨询</span></a></li>
+    <li><a onclick="dkcf()"><s class="too-qiao icon"></s><span>微信咨询</span></a></li>
+    {pboot:sort scode=11}
+    <li><a href="[sort:link]"><s class="too-map icon"></s><span>[sort:name]</span></a></li>
+    {/pboot:sort}
+  </ul>
+</section>
+<!--底部图标结束-->
+
+<div id="wxnr">
+  <div class="nrdf"> <i onclick="gbcf()">X</i><img src="{pboot:companyweixin}" alt="{pboot:pagetitle}"/>
+    <p>截屏，微信识别二维码</p>
+    <p>微信号：<span id="btn" data-clipboard-text="{label:weixinhao}">{label:weixinhao}</span></p>
+    <p>（点击微信号复制，添加好友）</p>
+  </div>
+</div>
+<div id="weixin">微信号已复制，请打开微信添加咨询详情！</div>
+<script type="text/javascript" src="{pboot:sitedomain}/m/skin/js/app.js" ></script>

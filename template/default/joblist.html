@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>{pboot:pagetitle}</title>
+<meta name="keywords" content="{pboot:pagekeywords}">
+<meta name="description" content="{pboot:pagedescription}">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+<link href="{pboot:sitetplpath}/skin/css/bootstrap.min.css" rel="stylesheet" >
+<link href="{pboot:sitetplpath}/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitetplpath}/skin/css/aos.css" rel="stylesheet">
+<link href="{pboot:sitetplpath}/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitetplpath}/skin/js/jquery.js"></script>
+<script src="{pboot:sitetplpath}/skin/js/jquery.superslide.2.1.1.js"></script>
+<script src="{pboot:sitetplpath}/skin/js/common.js"></script>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/index.php">
+</head>
+<body>
+{include file=comm/head.html}
+
+{include file=comm/top.html}
+
+<div class="container pages">    
+
+  	 {include file=comm/position.html}
+
+	 <!-- 列表内容 -->
+	 <div class="row">
+     {pboot:list num=10 order=sorting}
+     	<div class="mb-3 col-12 col-sm-6 col-lg-3">
+	      	<div class="card bg-light">
+			  <div class="card-header">招聘职位：[list:title]</div>
+			  <div class="card-body">
+			    <p class="card-text">[list:content drophtml=1 dropblank=1 lencn=50]</p>
+			    <a class="btn1 btn-info mt-2" href="[list:link]">查看详情</a>
+			  </div>
+			   <div class="card-footer">发布日期：[list:date style=Y-m-d]</div>
+			</div>
+		</div>
+     {/pboot:list}
+     </div>
+
+	<div class="pglist">{include file=comm/page.html}</div>
+</div>
+
+{include file=comm/foot.html}
+</body>
+</html>

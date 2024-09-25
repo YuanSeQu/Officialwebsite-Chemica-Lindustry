@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>{sort:title}</title>
+<meta name="keywords" content="{sort:keywords}">
+<meta name="description" content="{sort:description}">
+<meta name="author" content="www.bang-dun.com" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+<link href="{pboot:sitedomain}/skin/css/bootstrap.min.css" rel="stylesheet" >
+<link href="{pboot:sitedomain}/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/aos.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/skin/js/jquery.superslide.2.1.1.js"></script>
+<script src="{pboot:sitedomain}/skin/js/common.js"></script>
+</head>
+<body>
+{include file=comm/head.html}
+{include file=comm/top.html}
+<div class="wrapper">
+  <div class="w1200 clearfix">
+    <div class="left fl"> {include file=comm/left.html} </div>
+    <div class="right fr">
+      <div class="right_title clearfix">
+        <div class="sitepath fr"> <em class="home icon"></em>{pboot:position separator='>'}</div>
+        <h3>{content:title}</h3>
+      </div>
+      <!--单页内容开始-->
+      <div class="cont single">
+        <p>{content:content}</p>
+      </div>
+      <!--单页内容结束--> 
+    </div>
+  </div>
+</div>
+{include file=comm/foot.html}
+</body>
+</html>

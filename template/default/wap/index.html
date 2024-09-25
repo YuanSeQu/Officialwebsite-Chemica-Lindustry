@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no" />
+<title>{pboot:sitetitle}</title>
+<meta name="keywords" content="{pboot:sitekeywords}">
+<meta name="description" content="{pboot:sitedescription}">
+<meta name="author" content="www.bang-dun.com" />
+<link href="{pboot:sitedomain}/m/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/m/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/m/skin/js/autofontsize.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/clipboard.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/common.js"></script>
+</head>
+<body>
+{include file=head.html} 
+<!--幻灯片大图开始-->
+<section id="banner_main">
+  <div id="banner" class="banner">
+    <ul class="list clearfix">
+      {pboot:slide gid=2 num=6}
+      <li class="item"><a href="[slide:link]"><img src="[slide:src]" alt="[slide:title]"></a></li>
+      {/pboot:slide} 
+    </ul>
+    <div class="tip"></div>
+  </div>
+</section>
+<!--幻灯片大图结束-->
+
+<section class="index trans"> 
+  <!--首页导航开始-->
+  <section class="navlist">
+    <ul class="list clearfix">
+      {pboot:nav num=8}
+      <li><a href="[nav:link]" title="[nav:name]"><span class="tb"></span>
+        <h3>[nav:name]</h3>
+        </a></li>
+      {/pboot:nav}
+    </ul>
+  </section>
+  <!--首页导航结束-->
+  
+  <div class="hbk"></div>
+  
+  <!--产品中心开始--> 
+  {pboot:sort scode=5}
+  <section class="floor_1_main">
+    <div class="title">
+      <h3><b>[sort:name]</b></h3>
+      <h4>[sort:subname]</h4>
+      <s class="line_lef"></s><s class="line_rig"></s></div>
+    <div class="floor_1" id="floor_1"> 
+      <!--产品分类开始-->
+      <div class="imenu hd clearfix">
+        <ul class="list clearfix">
+          {pboot:nav parent=5 num=6}
+          <li><a href="[nav:link]" title="[nav:name]">[nav:name]</a></li>
+          {/pboot:nav}
+        </ul>
+      </div>
+      <!--产品分类结束-->
+      <div class="productlist">
+        <div class="bd">
+          <ul class="list clearfix">
+            {pboot:list scode=5 num=6 order=sorting}
+            <li class="item"><a href="[list:link]" title="[list:title]">
+              <figure><img src="[list:ico]" alt="[list:title]"/></figure>
+              <h3 >[list:title]</h3>
+              </a></li>
+            {/pboot:list}
+          </ul>
+        </div>
+      </div>
+      <div class="more clearfix"> <a class="gd" href="[sort:link]">查看更多</a><a class="zx" onclick="dkcf()">在线咨询</a></div>
+    </div>
+  </section>
+  {/pboot:sort} 
+  <!--产品中心结束--> 
+  
+  <!--小banner开始-->
+  <section class="xunpan clearfix"> <a class="zixun" href="tel:{pboot:companyphone}">
+    <p class="tit">根据您的要求量身定制<span class="en">Tailor your needs</span></p>
+    <div class="tel"><em class="icon"></em>{pboot:companyphone}</div>
+    </a></section>
+  <!--小banner结束--> 
+  
+  <!--产品优势开始-->
+  <section class="floor_2_main"> 
+    {pboot:sort scode=21}
+    <div class="title">
+      <h3><!--某某科技·--><b>[sort:name]</b></h3>
+      <h4>[sort:subname]</h4>
+      <s class="line_lef"></s><s class="line_rig"></s></div>
+    {/pboot:sort} 
+    <div class="youshi"> 
+      <!--供应开始--> 
+      
+      {pboot:list scode=21 order="date asc"}
+      <div class="item clearfix"> <a class="txt">
+        <div class="tit"><img src="{pboot:sitedomain}/m/skin/images/bt[list:i].png"/>
+          <h3>[list:ext_entitle]</h3>
+        </div>
+        <h2>[list:title]</h2>
+        <h4>[list:ext_futitle]</h4>
+        <p class="desc">[list:content drophtml=1 dropblank=1 len=30 more='...']</p>
+        </a> <a class="img"><img src="[list:ico]"/></a></div>
+      {/pboot:list}      
+      <!--供应结束--> 
+    </div>
+  </section>
+  <!--产品优势结束--> 
+  
+  <!--招聘信息开始--> 
+  {pboot:sort scode=9}
+    <section class="floor_4_main">
+    <div class="title">
+      <h3><!--某某科技·--><b> [sort:name]</b></h3>
+      <h4>[sort:subname]</h4>
+      <s class="line_lef"></s><s class="line_rig"></s></div>
+    <div class="caselist">
+      <ul class="list">
+        {pboot:list scode=9 num=4 order=sorting}
+        <li class="item"><a class="clearfix" href="[list:link]" title="[list:title]">
+          <div class="txt fr">
+            <h3>[list:title]</h3>
+            <p>[list:content drophtml=1 len=50]</p>
+            <span class="jia icon"></span></div>
+          <figure><img src="[list:ico]" alt="[list:title]"/></figure>
+          </a><span class="di"></span></li>
+        {/pboot:list}
+      </ul>
+    </div>
+    <div class="more clearfix"> <a class="gd" href="[sort:link]">查看更多</a><a class="zx" onclick="dkcf()">在线咨询</a></div>
+  </section>
+  {/pboot:sort} 
+  <!--招聘信息结束-->
+  
+  <div class="hbk"></div>
+  
+  <!--关于我们开始-->
+  <section class="floor_5_main">
+    {pboot:sort scode=1}
+    <div class="title">
+      <h3><b>[sort:name]</b></h3>
+      <h4>[sort:subname]</h4>
+      <s class="line_lef"></s><s class="line_rig"></s>
+    </div>
+    {/pboot:sort} 
+    {pboot:content id=1}
+    <div class="iabout"> <a class="con" href="[content:link]"><img src="[content:ico]" alt="content:title}"/>
+      <h3>{pboot:companyname}</h3>
+      <p class="desc">[content:content drophtml=1 len=250]</p>
+      </a>
+      <div class="more clearfix"><a class="gd" href="[content:link]">查看更多</a><a class="zx" onclick="dkcf()">在线咨询</a></div>
+    </div>
+    {/pboot:content}
+    <!--荣誉资质开始--> 
+    {pboot:sort scode=22}
+    <div class="honor">
+      <ul class="list clearfix">
+        {pboot:list scode=22 num=10 order=sorting}
+        <li class="item"><a href="[list:link]" title="[list:title]">
+          <figure><img src="[list:ico]" alt="[list:title]"/></figure>
+          <h3 >[list:title]</h3>
+          </a></li>
+        {/pboot:list}
+      </ul>
+      <div class="more clearfix"><a class="gd" href="[sort:link]">查看更多</a><a class="zx" onclick="dkcf()">在线咨询</a></div>
+    </div>
+    {/pboot:sort} 
+    <!--荣誉资质结束--> 
+  </section>
+  <!--关于我们结束-->
+  
+  <div class="hbk"></div>
+  
+  <!--新闻中心开始--> 
+  {pboot:sort scode=2}
+  <section class="floor_6_main inews">
+    <div class="title">
+      <h3><!--某某科技·--><b> [sort:name]</b></h3>
+      <h4>[sort:subname]</h4>
+      <s class="line_lef"></s><s class="line_rig"></s></div>
+    <div class="textlist">
+      <ul class="list">
+        {pboot:list scode=2 num=5 order=sorting}
+        <li class="item clearfix"><a class="img fl" href="[list:link]" title="[list:title]"><img src="[list:ico]" alt="[list:title]"/></a><a class="txt fl" href="[list:link]" title="[list:title]">
+          <h3 >[list:title]</h3>
+          <p>[list:content drophtml=1 len=30]</p>
+          </a>
+          <div class="time fr"><b>[list:date style=d]</b>[list:date style=Y-m]</div>
+        </li>
+        {/pboot:list}
+      </ul>
+    </div>
+    <div class="more clearfix"> <a class="gd" href="[sort:link]">查看更多</a><a class="zx" onclick="dkcf()">在线咨询</a> </div>
+  </section>
+  {/pboot:sort} 
+  <!--新闻中心结束-->
+  <div class="hbk"></div>
+</section>
+{include file=foot.html}
+</body>
+</html>

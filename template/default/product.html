@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>{content:title}-{pboot:sitetitle}</title>
+<meta name="keywords" content="{content:keywords}">
+<meta name="description" content="{content:description}">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+<link href="{pboot:sitedomain}/skin/css/bootstrap.min.css" rel="stylesheet" >
+<link href="{pboot:sitedomain}/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/aos.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/skin/js/jquery.superslide.2.1.1.js"></script>
+<script src="{pboot:sitedomain}/skin/js/common.js"></script>
+</head>
+<body>
+{include file=comm/head.html}
+
+{include file=comm/top.html}
+
+<div class="wrapper">
+    <div class="w1200 clearfix">
+    <div class="left fl">
+        {include file=comm/left.html}
+    </div>
+        <div class="right fr showproduct">
+            <div class="right_title clearfix">
+                <div class="sitepath fr"> <em class="home icon"></em>{pboot:position separator='>'} </div>
+                <h3>{content:title}</h3>
+            </div>
+            <!--图片内容开始-->
+            <div class="cont">
+                <div class="tod clearfix">
+                    <!--组图开始-->
+                    <div class="showImg fl clearfix">
+                        <div class="showImg_left">
+                            <div class="hd">
+                                <ul>
+                                    <li></li><li></li><li></li>
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <ul class="picList">
+                                    {pboot:pics num=10 id={content:id}}
+                                    <li><img src="[pics:src]" alt="[list:title]"></li>
+                                    {/pboot:pics}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--组图结束-->
+                    <div class="baseInfo fr">
+                        <h1 class="t">{content:title}</h1>
+                        <div class="desc">
+                            <div class="intro">{content:content lencn=190}</div></div>
+                        <div class="webtel">咨询热线：<strong>{pboot:companyphone}</strong></div>
+                    </div>
+                </div>
+                <div class="tiao"></div>
+                <!--介绍开始-->
+                <div class="detaiInfo clearfix">
+                    <div class="title2">
+                        <h3>产品介绍</h3>
+                        <s></s></div>
+                    <div class="info clearfix">
+                        <p>{content:content}</p>
+                    </div>
+                </div>
+                <!--介绍结束-->
+
+                <div class="reLink clearfix">
+                    <div class="prevLink fl">上一篇：{content:precontent} </div>
+                    <div class="nextLink fr">下一篇：{content:nextcontent}</div>
+                </div>
+            </div>
+            <!--图片内容结束-->
+        </div>
+    </div>
+</div>
+<!--页尾开始-->
+
+{include file=comm/foot.html}
+</body>
+</html>

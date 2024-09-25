@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>{pboot:pagetitle}</title>
+<meta name="keywords" content="{pboot:pagekeywords}">
+<meta name="description" content="{pboot:pagedescription}">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+<link href="{pboot:sitetplpath}/skin/css/bootstrap.min.css" rel="stylesheet" >
+<link href="{pboot:sitetplpath}/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitetplpath}/skin/css/aos.css" rel="stylesheet">
+<link href="{pboot:sitetplpath}/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitetplpath}/skin/js/jquery.js"></script>
+<script src="{pboot:sitetplpath}/skin/js/jquery.superslide.2.1.1.js"></script>
+<script src="{pboot:sitetplpath}/skin/js/common.js"></script>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/index.php">
+</head>
+<body>
+{include file=comm/head.html}
+{include file=comm/top.html}
+<div class="wrapper">
+	<div class="w1200 clearfix"> <div class="left fl">
+		{include file=comm/left.html}
+	</div>
+		<div class="right fr showNews">
+			<div class="right_title clearfix">
+				<div class="sitepath fr"> <em class="home icon"></em>{pboot:position separator='>'}</div>
+				<h3>{content:title}</h3>
+			</div>
+			<!--文章内容开始-->
+			<div class="cont single">
+				<div class="arctitle">
+					<h1 class="title">{content:title}</h1>
+					<div class="mark"><span>发布日期：{content:date style=Y-m-d}</span>　<span>浏览次数：<i id="hits">{content:visits}</i></span></div>
+				</div>
+				<div class="showContxt"> <p>{content:content}</p>
+				</div>
+				<div class="reLink clearfix">
+					<div class="prevLink fl">上一篇：{content:precontent}</div>
+					<div class="nextLink fr">下一篇：{content:nextcontent}</div>
+				</div>
+			</div>
+			<!--文章内容结束-->
+		</div>
+	</div>
+</div>
+<!--页尾开始-->
+{include file=comm/foot.html}
+</body>
+</html>

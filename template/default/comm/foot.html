@@ -1,0 +1,78 @@
+<div class="footer_main"> 
+  <!--友情链接开始-->
+  <div class="links" aos="fade-up" aos-easing="ease" aos-duration="700">
+    <div class="w1200 clearfix"> <span>友情链接：</span> {pboot:link  gid=2 num=50} <a href="[link:link]" title="[link:name]">[link:name]</a> {/pboot:link} </div>
+  </div>
+  <!--友情链接结束-->
+  <div class="bottom_main" aos="fade-up" aos-easing="ease" aos-duration="700">
+    <div class="bottom w1200 clearfix"> 
+      <!--底部导航开始-->
+      <div class="bNav fl"> {pboot:nav num=4 parent=0}
+        <dl class="item">
+          <dt> <a href="[nav:link]" title="[nav:name]">[nav:name]</a></dt>
+          {pboot:if([nav:soncount]>0)}
+          {pboot:2nav num=10 parent=[nav:scode]}
+          <dd><a href="[2nav:link]" title="[2nav:name]">[2nav:name]</a></dd>
+          {/pboot:2nav}
+          {/pboot:if}
+        </dl>
+        {/pboot:nav} </div>
+      <!--底部导航结束--> 
+      
+      <!--联系方式开始-->
+      <div class="contact_info fl">
+        <p class="p1">全国咨询热线</p>
+        <p class="dh">{pboot:companymobile}</p>
+        <p class="tel">邮箱：{pboot:companyemail}</p>
+        <p class="tel">手机：{pboot:companymobile}</p>
+        <p class="tel">电话：{pboot:companyphone}</p>
+        <p class="tel">地址：{pboot:companyaddress}</p>
+      </div>
+      <!--联系方式结束--> 
+      
+      <!--二维码开始--> 
+      <!---->
+      <div class="ewm fl">
+        <dl>
+          <dt><img src="{pboot:companyweixin}"/></dt>
+          <dd>微信扫码 关注我们</dd>
+        </dl>
+      </div>
+      <!--二维码结束--> 
+    </div>
+  </div>
+  
+  <!--版权开始-->
+  <div class="copyright_main">
+    <div class="copyright w1200 clearfix">
+      <p class="fl">{pboot:sitecopyright}　<a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">{pboot:siteicp}</a> </p>
+      <p class="fr"> <a href="/sitemap.xml" target="_blank">XML地图</a> {pboot:sitestatistical}</p>
+    </div>
+  </div>
+  <!--版权结束--> 
+</div>
+<!--页尾结束--> 
+
+<!--浮动客服开始-->
+<dl class="toolbar" id="toolbar">
+  <dd> <a class="slide tel slide-tel" href="javascritp:void(0);"> <i><span></span></i>{pboot:companymobile} </a> </dd>
+  <dd> <a href="http://wpa.qq.com/msgrd?v=3&uin={pboot:companyqq}&site=qq&menu=yes"> <i class="qq"><span></span></i> </a> </dd>
+  <dd> <i class="code"><span></span></i>
+    <ul class="pop pop-code">
+      <li><img src="{pboot:companyweixin}"/>
+        <h3><b>微信号：{pboot:companymobile}</b>微信二维码</h3>
+      </li>
+    </ul>
+  </dd>
+  <dd> <a href="javascript:;"><i id="gotop" class="top"><span></span></i></a></dd>
+</dl>
+
+<!--浮动客服结束--> 
+<script src="{pboot:sitedomain}/skin/js/aos.js"></script> 
+<script src="{pboot:sitedomain}/skin/js/app.js"></script> 
+<script type="text/javascript">
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+</script>

@@ -1,0 +1,31 @@
+<!--顶部开始-->
+
+<header id="top_main" class="header">
+  <div id="top" class="clearfix"> <a id="topsearch" class="topsearch" href="javascrpt:;"></a> 
+    <!--搜索栏开始-->
+    <div id="search" class="clearfix">
+      <form role="search" action="{pboot:scaction}" name="formsearch">
+        <input class="txt fl" type="text" name="keyword" value="请输入关键字" onfocus="if(this.value==defaultValue)this.value=&#39;&#39;" onblur="if(this.value==&#39;&#39;)this.value=defaultValue">
+        <input class="btn fl icon" type="submit" value="搜索" name="">
+      </form>
+    </div>
+    <!--搜索栏结束--> 
+    <a class="logo" href="{pboot:sitedomain}/" title="{pboot:pagetitle}"> <img src="{label:mlogo}" alt="{pboot:pagetitle}"></a>
+    <div id="nav" class="cur">
+      <p class="nav icon"></p>
+    </div>
+  </div>
+</header>
+<!--顶部结束--> 
+<!--右侧导航开始-->
+<nav class="subNav trans" id="subNav">
+  <div class="subNavCon">
+    <ul class="list">
+      <li><a href="{pboot:sitedomain}/"  title="网站首页">网站首页</a></li>
+      {pboot:nav num=10 parent=0}
+      <li><a href="[nav:link]" title="[nav:name]">[nav:name]</a></li>
+      {/pboot:nav}
+    </ul>
+  </div>
+</nav>
+<!--右侧导航结束--> 

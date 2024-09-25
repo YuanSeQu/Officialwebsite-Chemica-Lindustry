@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no" />
+<title>{sort:title}</title>
+<meta name="keywords" content="{sort:keywords}">
+<meta name="description" content="{sort:description}">
+<meta name="author" content="www.bang-dun.com" />
+<link href="{pboot:sitedomain}/m/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/m/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/m/skin/js/autofontsize.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/clipboard.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/common.js"></script>
+</head>
+<body>
+{include file=head.html} 
+<!--位置开始--> 
+{include file=left.html} 
+<!--位置结束--> 
+<!--单页内容开始-->
+<section class="content showInfo">
+  <div class="contxt">
+    <p>{content:content}</p>
+   </div>
+</section>
+<!--单页内容结束--> 
+{include file=foot.html}
+</body>
+</html>

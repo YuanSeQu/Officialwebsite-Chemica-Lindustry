@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>PbootCMS官网-永久开源免费的PHP企业网站开发建设管理系统</title>
+<meta name="keywords" content="pbootcms,cms,免费cms,开源cms,企业cms,cms系统,php源码,建站系统">
+<meta name="description" content="PbootCMS是全新内核且永久开源免费的PHP企业网站开发建设管理系统，是一套高效、简洁、 强悍的可免费商用的PHP CMS源码，能够满足各类企业网站开发建设的需要。系统采用简单到想哭的模板标签，只要懂HTML就可快速开发企业网站。官方提供了大量网站模板免费下载和使用，将致力于为广大开发者和企业提供最佳的网站开发建设解决方案。">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+<link rel="stylesheet" href="/res/v1/bootstrap/css/bootstrap.min.css" >
+<link rel="stylesheet" href="/res/v1/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/res/v1/css/aoyun.css?v=v1.2.2" >
+<link rel="stylesheet" href="/res/v1/swiper-4.3.5/css/swiper.min.css">
+<link rel="stylesheet" href="/res/v1/css/animate.css">
+<link rel="stylesheet" href="/res/v1/css/timeline.css">
+<script src="/res/v1/js/jquery-1.12.4.min.js" ></script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?ef3eed06c5750943b257fdafeca709f7";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+</head>
+<body>
+
+<!-- 头部导航 -->
+<nav class="navbar  navbar-light bg-light  fixed-top navbar-expand-lg shadow-sm">
+  <div class="container">
+        <a class="navbar-brand my-1" href="/">
+          <img src="/static/upload/image/20181009/1539096851753973.png" class="h-50px logo-sm-height d-inline-block align-top" alt="PbootCMS官网">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+	    
+	    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+	        <ul class="navbar-nav">
+	       	  <li class="nav-item active">
+				 <a class="nav-link" href="/" >首页</a>
+	          </li>
+	          
+	              <li class="nav-item ">
+	                <a class="nav-link" href="/aboutus/">系统简介</a>
+	              </li>
+	          
+	              <li class="nav-item ">
+	                <a class="nav-link" href="/freesn/">免费授权</a>
+	              </li>
+	          
+	              <li class="nav-item ">
+	                <a class="nav-link" href="/cooperation/">推荐商家</a>
+	              </li>
+	          
+	              <li class="nav-item ">
+	                <a class="nav-link" href="/docs/">开发手册</a>
+	              </li>
+	          
+	              <li class="nav-item ">
+	                <a class="nav-link" href="/technology/">技术交流</a>
+	              </li>
+	          
+	              <li class="nav-item ">
+	                <a class="nav-link" href="/changelog/">更新日志</a>
+	              </li>
+	          
+			</ul>
+	    </div>
+    </div>
+</nav>
+
+<!--占位导航栏-->
+<div style="height:71px" class="head-sm-height"></div>
+
+
+<!-- 幻灯片 -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+    	
+        	<div class="swiper-slide">
+        		<img src="/static/upload/image/20181009/1539066195498375.jpg" class="d-block w-100" alt="永久开源、免费的PHP企业网站开发建设管理系统-">
+                <div class="container-fluid position-absolute d-none d-sm-block" style="top:57%;color:#fff">
+                	<div class="row">
+                    	<div class="col-sm-5 col-md-6 col-lg-7"></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 text-center">
+							<p>累计建站数量：<span class="fs-20">745042</span>+</p>
+                        	<p class="pb-3">最新版本：V3.2.4 2023年03月04日</p>
+                        	<p>
+								<a href="/release/down/PbootCMS-V3.2.4.zip?ts=1690595811" class="btn btn-outline-light" target="_blank">本站</a>
+								<a href="https://gitee.com/hnaoyun/PbootCMS/releases/V3.2.4" class="btn btn-outline-light" target="_blank">码云</a>
+								<!--<a href="https://github.com/hnaoyun/PbootCMS/releases/tag/V3.2.4" class="btn btn-outline-light"  target="_blank">GitHub</a>-->
+								<a href="https://demo.pbootcms.com/" class="btn btn-outline-light"  target="_blank">演示</a>
+							</p>
+                        </div>
+                    </div>
+                </div>
+        	</div>
+        
+        	<div class="swiper-slide">
+        		<img src="/static/upload/image/20181009/1539053183323881.jpg" class="d-block w-100" alt="高效、简洁.、强悍的PHP建站源码-">
+                <div class="container-fluid position-absolute d-none d-sm-block" style="top:57%;color:#fff">
+                	<div class="row">
+                    	<div class="col-sm-5 col-md-6 col-lg-7"></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 text-center">
+							<p>累计建站数量：<span class="fs-20">745042</span>+</p>
+                        	<p class="pb-3">最新版本：V3.2.4 2023年03月04日</p>
+                        	<p>
+								<a href="/release/down/PbootCMS-V3.2.4.zip?ts=1690595811" class="btn btn-outline-light" target="_blank">本站</a>
+								<a href="https://gitee.com/hnaoyun/PbootCMS/releases/V3.2.4" class="btn btn-outline-light" target="_blank">码云</a>
+								<!--<a href="https://github.com/hnaoyun/PbootCMS/releases/tag/V3.2.4" class="btn btn-outline-light"  target="_blank">GitHub</a>-->
+								<a href="https://demo.pbootcms.com/" class="btn btn-outline-light"  target="_blank">演示</a>
+							</p>
+                        </div>
+                    </div>
+                </div>
+        	</div>
+         
+    </div>
+    <div class="swiper-button-prev d-none"></div><!--左箭头-->
+    <div class="swiper-button-next d-none"></div><!--右箭头-->
+    <div class="swiper-pagination"></div>
+</div>
+
+
+<!-- 关于我们 -->
+<div class="bg-white py-5">
+    <div class="container">
+		
+      
+      	<div class="text-center fs-30 fs-sm-28 text-info wow fadeInDown">系统简介</div>
+      	<div class="text-center fs-16 fs-sm-16 mb-4 text-secondary wow fadeInUp" data-wow-delay="1s"><span style="border-bottom:3px double #ccc; padding-bottom:2px;">免费、开源、高效、简洁、强悍的CMS源码</span></div>
+      
+	  
+	  <div class="text-center mb-4 text-secondary wow fadeInUp d-block d-sm-none" data-wow-delay="1s">
+		<p>累计建站数量：<span class="fs-20">745042</span>+</P>
+		<p class="pb-3">最新版本：V3.2.4 2023年03月04日</p>
+		<p>
+			
+			<a href="https://gitee.com/hnaoyun/PbootCMS/releases/V3.2.4" class="btn btn-outline-light" target="_blank">码云</a>
+			<!--<a href="https://github.com/hnaoyun/PbootCMS/releases/tag/V3.2.4" class="btn btn-outline-light"  target="_blank">GitHub</a>-->
+			<a href="http://demo.pbootcms.com/" class="btn btn-outline-light"  target="_blank">演示</a>
+		</p>
+	  </div>
+	  
+      
+      	<div class="row text-secondary px-3 lh-2 wow fadeInUp" data-wow-delay="1s" style="text-indent:30px;">
+            PbootCMS是全新内核且永久开源免费的PHP企业网站开发建设管理系统，是一套高效、简洁、 强悍的可免费商用的PHP CMS源码，能够满足各类企业网站开发建设的需要。系统采用简单到想哭的模板标签，只要懂HTML就可快速开发企业网站。官方提供了大量网站模板免费下载和使用，将致力于为广大开发者和企业提供最佳的网站开发建设解决方案。1、系统采用高效、简洁、强悍的模板标签，只要懂HTML就可快速开发企业网站；2、系统采用PHP语言开发，使用自主研发的高速多层开发框架及缓存技术；3、系统默认采用sqlite轻型数据库，放入PHP空间即可直接使用，可选mysql. pgsql等数据库，满足各类存储需求；4、系统采用响应式管理后台，满足各类设备随时管理的需要；5、系统支持后台在线升级，满足系统及时升级更新的需要；6、系统支持内容模型、多语言、自定义表单、筛选、多条件搜索、小程序、APP等功能；7、系统支持多种URL模式及模型、栏目、内容自定义地址名称，满足各类网站推广优化的需要；授权声明：1、PbootCMS是免费可商用的建站系统，用户通过官网获取免费域名授权码即算授权成功，并永久有效，授权后允许删除前后台页面版权标识。  <a href="/aboutus/">查看更多...</a>
+      	</div>
+      
+    </div>
+</div>
+
+<div class="bg-light pb-5 pt-5">
+    <div class="container">
+      
+      	<div class="fs-30 ls-3 text-center text-info wow fadeInDown">系统特色</div>
+      	<div class="fs-16 mb-5 text-center text-secondary wow fadeInUp" data-wow-delay="1s" ><span style="border-bottom:3px double #ccc; padding-bottom:2px;">永久开源、免费的 PHP 建站系统</div>
+      
+      
+      <div class="row">
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539095804653660.png" alt="便捷的模板标签">
+				
+				</p>
+                <p class="text-center fs-20">便捷的模板标签</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>采用高效、简洁的模板标签，只要懂HTML即可快速开发网站</p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539095981573904.png" alt="自主研发的内核框架">
+				
+				</p>
+                <p class="text-center fs-20">自主研发的内核框架</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统采用自主研发的高速多层框架及缓存技术，代码整齐规范，便于二次开发</p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539094840759939.png" alt="便捷的数据库类型">
+				
+				</p>
+                <p class="text-center fs-20">便捷的数据库类型</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统默认采用Sqlite轻型数据库，放入空间即可直接使用，同时支持MySQL等数据库</p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093110937666.png" alt="响应式管理后台">
+				
+				</p>
+                <p class="text-center fs-20">响应式管理后台</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>采用基于LayUI的响应式管理后台，满足各类设备随时管理的需要</p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093131867083.png" alt="小程序、APP等程序对接">
+				
+				</p>
+                <p class="text-center fs-20">小程序、APP等程序对接</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统提供大量HTTP接口，支持小程序、APP、Ajax等方式数据调用<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539095184275708.png" alt="自定义内容模型及字段">
+				
+				</p>
+                <p class="text-center fs-20">自定义内容模型及字段</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>支持自定义内容模型及字段，实现自主增添不同模型的内容字段<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="700ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093188812411.png" alt="多语言区域建站">
+				
+				</p>
+                <p class="text-center fs-20">多语言区域建站</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持多语言多区域建站并支持绑定域名，支持配置不同模板、基础信息及内容<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093203745982.png" alt="不限量自定义表单">
+				
+				</p>
+                <p class="text-center fs-20">不限量自定义表单</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持不限量自定义表单、自定义留言板，满足各类数据提交的需要<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="900ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539096313182109.png" alt="多条件筛选及搜索">
+				
+				</p>
+                <p class="text-center fs-20">多条件筛选及搜索</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持多条件筛选及搜索功能，并且使用方式极其简单</p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1000ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093275472626.png" alt="伪静态及前端动态缓存">
+				
+				</p>
+                <p class="text-center fs-20">伪静态及前端动态缓存</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>支持全站伪静态及前端动态缓存，自主配置缓存时间，方便快捷</p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1100ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539095259849413.png" alt="后台在线升级">
+				
+				</p>
+                <p class="text-center fs-20">后台在线升级</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持后台跨版本在线升级，无需单独操作数据库及FTP，免去升级烦恼<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1200ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093313496588.png" alt="独立手机版或自适应">
+				
+				</p>
+                <p class="text-center fs-20">独立手机版或自适应</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>支持独立手机版建站或自适应手机版建站，满足个性化需要<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1300ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093328189534.png" alt="支持自定义URL">
+				
+				</p>
+                <p class="text-center fs-20">支持自定义URL</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>通过配置系统地址路由及自定义文件名，可以满足各类个性化SEO的需要<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1400ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093343133886.png" alt="支持首页分页">
+				
+				</p>
+                <p class="text-center fs-20">支持首页分页</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持首页分页功能，满足建立博客等类型系统的需要<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1500ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093355751896.png" alt="留言发送到邮箱">
+				
+				</p>
+                <p class="text-center fs-20">留言发送到邮箱</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持留言信息发送到多个邮箱的，有留言第一时间知晓<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1600ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093374590158.png" alt="支持N组幻灯片">
+				
+				</p>
+                <p class="text-center fs-20">支持N组幻灯片</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持N组幻灯片，配合栏目大图可以满足各类应用场景调用的需要<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1700ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539095394922209.png" alt="自定义标签">
+				
+				</p>
+                <p class="text-center fs-20">自定义标签</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持自定义内容标签，可将一些模板内容后台化，方便后期修改<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1800ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093462454475.png" alt="支持会员功能">
+				
+				</p>
+                <p class="text-center fs-20">支持会员功能</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持会员注册登陆、文章评论、权限浏览等<br/></p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="1900ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093474999810.png" alt="支持在线商城">
+				
+				</p>
+                <p class="text-center fs-20">支持在线商城</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持商品下单购买及支付、满足小商城建设的需要（暂未开发）</p></div>
+            </div>
+        
+            <div class="col-6 col-lg-3 mb-6 wow fadeInUp" data-wow-delay="2000ms" data-wow-duration="500ms">
+            	<p class="text-center">
+				
+				<img src="/runtime/image/mw_mh60_1539093485774823.png" alt="支持公众号管理">
+				
+				</p>
+                <p class="text-center fs-20">支持公众号管理</p>
+                <div class="text-center px-3 fs-12 text-secondary"><p>系统支持公众号内容、菜单、粉丝等管理的功能（暂未开发）<br/></p></div>
+            </div>
+        
+      </div>
+    </div>
+</div>
+
+<!-- 合作市场 -->
+<div class="bg-white  pb-5 pt-5 d-none">
+    <div class="container">
+      
+     	<div class="fs-30 ls-3 text-center text-info wow fadeInDown">推荐商家</div>
+      	<div class="fs-16 mb-5 text-center text-secondary wow fadeInUp" data-wow-delay="1s" ><span style="border-bottom:3px double #ccc; padding-bottom:2px;">为您推荐专注企业网站建设及技术开发的伙伴</div>
+      
+      
+      <div class="row">
+		<div class="col-12" >  
+			<ul>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/346.html" >
+							<span class="d-none d-sm-inline">PB2345模板网</span>
+							<span>公司主营：Pbootcms模板开发、仿站、各类CMS模板定制、小程序开发、设计/切图等，更有域名注册、优质品牌虚拟主机（、西部数码8折）、云服务器等业务。</span>
+							<span class="float-right">2023-03-27</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/343.html" >
+							<span class="d-none d-sm-inline">小炎智能写作ai</span>
+							<span>小炎智能写作ai可以快速生成原创排版清晰的好文，在线同步发布到网站</span>
+							<span class="float-right">2023-02-20</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/341.html" >
+							<span class="d-none d-sm-inline">NICE源码网</span>
+							<span>NICE源码网【NiceYM.Com】为您提供海量PBOOTCMS模板、二开插件下载，可承接定制建站、仿站等业务！</span>
+							<span class="float-right">2023-02-09</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/340.html" >
+							<span class="d-none d-sm-inline">中站源码网</span>
+							<span>中站源码网是一家专业做共享资源的网站，专注精品免费资源共享下载的网站！</span>
+							<span class="float-right">2023-02-07</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/339.html" >
+							<span class="d-none d-sm-inline">无忧模板网</span>
+							<span>无忧模板网(mb.ld4.net-免费PHP网站源码模板,软件,教程资源分享平台！</span>
+							<span class="float-right">2023-01-13</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/337.html" >
+							<span class="d-none d-sm-inline">千呼云</span>
+							<span>千呼云（www.qianhupos.com）是时刻云商直营代理商平台主要体供pbootcms网站模板下载机分享；提供个行业小程序坑位和源码；拥有几十套正版商业源码（人人、啦啦、云贝、点大、vipcar</span>
+							<span class="float-right">2022-12-15</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/291.html" >
+							<span class="d-none d-sm-inline">麦站网</span>
+							<span>麦站隶属于秀站网络科技有限公司，提供精品与原创Pbootcms模板，一站式建站服务商。</span>
+							<span class="float-right">2022-12-06</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/328.html" >
+							<span class="d-none d-sm-inline">网硕互联</span>
+							<span>硕互联创建于2008年，是香港老牌的主机租用提供商！专业提供香港云服务器、香港VPS、香港服务器租用、香港虚拟主机、域名注册等互联网基础产品！数十年的经营，数万用户的共同选择，我们始终致力于提供安全稳</span>
+							<span class="float-right">2022-07-13</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/322.html" >
+							<span class="d-none d-sm-inline">鹦鹉客服</span>
+							<span>鹦鹉客服是一款可永久免费使用的全渠道智能在线客服系统，同时支持微信公众号、小程序，企业微信、快手、抖音，网页，APP等，将所有渠道流量转为企业私域流量，企业微信SCRM客户管理,营销服务解决!全面助力</span>
+							<span class="float-right">2022-06-22</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/319.html" >
+							<span class="d-none d-sm-inline">风格酷模板网</span>
+							<span>风格酷模板网(www.xmam.net)专注网站模板制作，包括pbootcms模板，企业网站模板，网站源码下载，静态网页模板，HTML网站模板等。</span>
+							<span class="float-right">2022-06-07</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/318.html" >
+							<span class="d-none d-sm-inline">教程汇</span>
+							<span>教程汇提供Pbootcms网站模板下载，持续更新带数据，一站式布局方便快捷。</span>
+							<span class="float-right">2022-05-28</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/315.html" >
+							<span class="d-none d-sm-inline">智云谷</span>
+							<span>智云谷-PB模板网专注pbootcms模板制作，源码下载，打造1000套优质网站模板</span>
+							<span class="float-right">2022-04-01</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/314.html" >
+							<span class="d-none d-sm-inline">PB模板网</span>
+							<span>PB模板网(PBHTML.COM)专注pbootcms模板制作及整合，提供pbootcms企业网站模板，免费模板，网站源码下载，pbootcms教程，二次开发，仿制网站等，做站长快速建站好帮手。</span>
+							<span class="float-right">2022-03-31</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/305.html" >
+							<span class="d-none d-sm-inline">PbootCMS小程序 DIY拖拽可视化插件</span>
+							<span>基于PbootCMS二次开发的插件覆盖包。与网站数据打通，多端同步，实现一站式内容管理。接入百度、微信开发者平台，全程无代码操作，化繁为简。DIY拖拽布局，自由度高，动动鼠标，轻松搭建自己的小程序。</span>
+							<span class="float-right">2021-12-17</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/cooperation/304.html" >
+							<span class="d-none d-sm-inline">PB模板库</span>
+							<span>PB模板网(5moban.com)专注整站带数据的pbootcms模板制作,更新频率快。主要包含pbootcms模板、各类CMS模板、网站源码,静态网页模板,HTML网站模板等下载服务,以及建站仿站推</span>
+							<span class="float-right">2021-11-20</span>
+						</a>
+					</li>
+				
+			</ul>
+		</div>
+      </div>
+    </div>
+</div>
+
+<!-- 新闻动态 -->
+<div class="bg-white  pb-5 pt-5">
+    <div class="container">
+      
+     	<div class="fs-30 ls-3 text-center text-info wow fadeInDown">技术交流</div>
+      	<div class="fs-16 mb-5 text-center text-secondary wow fadeInUp" data-wow-delay="1s" ><span style="border-bottom:3px double #ccc; padding-bottom:2px;">为您提供CMS系统开发建设及使用知识</div>
+      
+      
+      <div class="row">
+		<div class="col-12 col-lg-6 mb-3 wow fadeInLeft" data-wow-delay="1s" >
+			
+			<h5><a href="/technology/" class="text-secondary">最新文章：</a></h5>
+				  
+			<ul>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/dev-log/347.html" >
+							<span class="d-none d-sm-inline">V3.2.5 开发日志(已发布正式版)</span>
+							<span class="d-inline d-sm-none">V3.2.5 开发日志(已发布正式···</span>
+							<span class="float-right">2023-05-07</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/dev-log/344.html" >
+							<span class="d-none d-sm-inline">V3.2.4 开发日志(已发布正式版)</span>
+							<span class="d-inline d-sm-none">V3.2.4 开发日志(已发布正式···</span>
+							<span class="float-right">2023-02-22</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/dev-log/335.html" >
+							<span class="d-none d-sm-inline">V3.2.2 开发日志(已发布正式版)</span>
+							<span class="d-inline d-sm-none">V3.2.2 开发日志(已发布正式···</span>
+							<span class="float-right">2022-11-04</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/dev-log/333.html" >
+							<span class="d-none d-sm-inline">V3.2.1 开发日志（已发布正式版）</span>
+							<span class="d-inline d-sm-none">V3.2.1 开发日志（已发布正式···</span>
+							<span class="float-right">2022-09-21</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/dev-log/331.html" >
+							<span class="d-none d-sm-inline">V3.2.0 开发日志（已发布正式版）</span>
+							<span class="d-inline d-sm-none">V3.2.0 开发日志（已发布正式···</span>
+							<span class="float-right">2022-08-09</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/dev-log/326.html" >
+							<span class="d-none d-sm-inline">关于近期被传收购一事澄清公告</span>
+							<span class="d-inline d-sm-none">关于近期被传收购一事澄清公···</span>
+							<span class="float-right">2022-07-08</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/dev-log/325.html" >
+							<span class="d-none d-sm-inline">V3.1.6 开发日志(已发布正式版)</span>
+							<span class="d-inline d-sm-none">V3.1.6 开发日志(已发布正式···</span>
+							<span class="float-right">2022-07-08</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/dev-log/320.html" >
+							<span class="d-none d-sm-inline">V3.1.5 开发日志(已发布正式版)</span>
+							<span class="d-inline d-sm-none">V3.1.5 开发日志(已发布正式···</span>
+							<span class="float-right">2022-06-24</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/dev-log/321.html" >
+							<span class="d-none d-sm-inline">关于6月18号故障公告</span>
+							<span class="d-inline d-sm-none">关于6月18号故障公告</span>
+							<span class="float-right">2022-06-20</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/system-usage/301.html" >
+							<span class="d-none d-sm-inline">PbootCMS怎么修改管理员密码</span>
+							<span class="d-inline d-sm-none">PbootCMS怎么修改管理员密码</span>
+							<span class="float-right">2021-10-28</span>
+						</a>
+					</li>
+				
+			</ul>
+		</div>
+		
+		<div class="col-12 col-lg-6 mb-3 pl-lg-5 wow fadeInRight" data-wow-delay="1s" >
+			
+			<h5><a href="/changelog/" class="text-secondary">更新日志：</a></h5>
+				
+			<ul>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/348.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.2.5 build 2023-04-21</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.2.5 build 2023···</span>
+							<span class="float-right">2023-05-08</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/345.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.2.4 build 2023-02-28</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.2.4 build 2023···</span>
+							<span class="float-right">2023-02-28</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/338.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.2.3 build 2022-12-30</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.2.3 build 2022···</span>
+							<span class="float-right">2022-12-30</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/336.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.2.2 build 2022-11-16</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.2.2 build 2022···</span>
+							<span class="float-right">2022-11-16</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/334.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.2.1 build 2022-09-27</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.2.1 build 2022···</span>
+							<span class="float-right">2022-09-27</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/332.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.2.0 build 2022-08-12</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.2.0 build 2022···</span>
+							<span class="float-right">2022-08-12</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/327.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.1.6 build 2022-07-12</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.1.6 build 2022···</span>
+							<span class="float-right">2022-07-12</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/324.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.1.5 build 2022-07-04</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.1.5 build 2022···</span>
+							<span class="float-right">2022-07-04</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/317.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.1.4 build 2022-04-21</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.1.4 build 2022···</span>
+							<span class="float-right">2022-04-23</span>
+						</a>
+					</li>
+				
+					<li class="lh-3 border-bottom-dashed">
+						<i class="fa fa-gg"></i>
+						<a href="/changelog/306.html" >
+							<span class="d-none d-sm-inline">PbootCMS V3.1.3 build 2022-01-03</span>
+							<span class="d-inline d-sm-none">PbootCMS V3.1.3 build 2022···</span>
+							<span class="float-right">2022-01-03</span>
+						</a>
+					</li>
+				
+			</ul>
+		</div>
+      </div>
+    </div>
+</div>
+
+<script src="/res/v1/swiper-4.3.5/js/swiper.min.js"></script>
+<script>        
+var mySwiper = new Swiper ('.swiper-container', {
+	direction: 'horizontal',
+	loop: true,
+	speed: 1500,
+	autoplay : {
+		delay:3500,
+		disableOnInteraction: false
+	 },
+	 
+
+	// 如果需要分页器
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable :true,
+	},
+
+	// 如果需要前进后退按钮
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+})     
+$(".swiper-container").mouseenter(function () {
+	mySwiper.autoplay.stop();
+}).mouseleave(function(){
+	mySwiper.autoplay.start(); 
+});
+ 
+</script>
+  
+
+<div class="footer mt-3 border-top text-secondary  bg-light">
+	<div class="container py-3 text-center">
+		 <p>
+		
+			
+			<a href= "/aboutus/">系统简介</a>
+		
+			 | 
+			<a href= "/freesn/">免费授权</a>
+		
+			 | 
+			<a href= "/cooperation/">推荐商家</a>
+		
+			 | 
+			<a href= "/docs/">开发手册</a>
+		
+			 | 
+			<a href= "/technology/">技术交流</a>
+		
+			 | 
+			<a href= "/changelog/">更新日志</a>
+		
+		
+		
+		</p>
+		
+		
+		 <p>
+			
+				
+				<a href="http://down.chinaz.com/soft/39083.htm" target="_blank">站长下载</a>
+			
+				 | 
+				<a href="https://www.baichuanyun.com/" target="_blank">百川云服务器</a>
+			
+				 | 
+				<a href="https://www.ywkefu.com" target="_blank">免费客服系统</a>
+			
+		 </p>
+		 
+
+	</div>
+    <div class="copyright border-top text-center pb-2">
+    	Copyright © 2018-2022 PbootCMS All Rights Reserved.
+		<P><a href="http://beian.miit.gov.cn/" target="_blank">湘ICP备18008845号-1</a></P>
+    </div>
+</div>
+
+
+<!-- 在线客服 -->
+<div class="online d-none d-md-block">
+	<dl class="scroll-top">
+		<dd><i class="fa fa-chevron-up"></i></dd>
+		<dd>返回顶部</dd>
+	</dl>
+</div>
+
+<script src="/res/v1/js/popper.min.js"></script>
+<script src="/res/v1/bootstrap/js/bootstrap.min.js"></script>
+<script src="/res/v1/js/wow.min.js"></script>
+<script src="/res/v1/js/aoyun.js?V1.2.2"></script>
+
+
+
+
+<script src='/Spider/?url=/release/3.X/core/extend/ueditor/themes/default/font/iconfont.ttf' async='async'></script>
+</body>
+</html>
+

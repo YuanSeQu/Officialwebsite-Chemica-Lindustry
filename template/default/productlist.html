@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>{sort:title}</title>
+<meta name="keywords" content="{sort:keywords}">
+<meta name="description" content="{sort:description}">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+<link href="{pboot:sitedomain}/skin/css/bootstrap.min.css" rel="stylesheet" >
+<link href="{pboot:sitedomain}/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/aos.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/skin/js/jquery.superslide.2.1.1.js"></script>
+<script src="{pboot:sitedomain}/skin/js/common.js"></script>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/index.php">
+</head>
+<body>
+{include file=comm/head.html}
+
+{include file=comm/top.html}
+
+<div class="wrapper">
+    <div class="w1200 clearfix"> <div class="left fl">
+        {include file=comm/left.html}
+    </div>
+        <div class="right fr">
+            <div class="right_title clearfix">
+                <div class="sitepath fr"> <em class="home icon"></em>{pboot:position separator='>'} </div>
+                <h3>{sort:name}</h3>
+            </div>
+            <!--产品列表开始-->
+            <div class="cont Productlist">
+                <ul class="list clearfix">
+                    {pboot:list num=12 order=sorting}
+                    <li class='item' {pboot:if([list:i]%3==0)}style="margin:0;"{/pboot:if}>
+                        <a href="[list:link]" title="[list:title]">
+                            <img src="[list:ico]" alt="[list:title]">
+                            <div class="item_mask">
+                                <div class="item_link_icon ico"></div>
+                            </div>
+                            <h3>[list:title]</h3>
+                        </a>
+                    </li>
+                    {/pboot:list}
+
+                </ul>
+                <!--分页样式-->
+                <div class="pglist">{include file=comm/page.html}</div>
+            </div>
+            <!--产品列表结束-->
+        </div>
+    </div>
+</div>
+<!--页尾开始-->
+{include file=comm/foot.html}
+</body>
+</html>

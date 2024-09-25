@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no" />
+<title>{sort:title}</title>
+<meta name="keywords" content="{sort:keywords}">
+<meta name="description" content="{sort:description}">
+<link href="{pboot:sitedomain}/m/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/m/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/m/skin/js/autofontsize.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/clipboard.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/common.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/jquery.tips.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/jquery.validator.js"></script>
+</head>
+<body>
+{include file=head.html} 
+<!--位置开始--> 
+{include file=left.html} 
+<!--位置结束--> 
+<!--单页内容开始-->
+<section class="contactPage"> 
+  <!--留言表单开始-->
+  <ul class="login">
+    <form class="msgForm form_book" onsubmit="return submsg(this);" >
+      <li>
+        <input type="text" name="contacts" required id="contacts" maxlength="20" placeholder="姓名" class="login_input " />
+      </li>
+      <li>
+        <input type="text" name="mobile" required id="mobile" maxlength="20" placeholder="手机号码" class="login_input" >
+      </li>
+      <li>
+        <textarea name="content" required id="content" cols="" rows="" onKeyUp="strlen_verify(this,'booklen',255)" placeholder="咨询内容" class="login_textarea" ></textarea>
+      </li>
+      <li>
+        <input type="text" name="checkcode" required id="checkcode" maxlength="20" placeholder="验证码" data-rule="验证码:required;checkcode" class="login_input" style="width: 50%;display:block; float:left;">
+        <div style="padding-bottom:50px;"><img title="点击刷新" style="height:40px;" src="{pboot:checkcode}" onclick="this.src='{pboot:checkcode}?'+Math.round(Math.random()*10);" /></div>
+      </li>
+      <li>
+        <input class="login_btn common_bg" type="submit" value="提   交">
+      </li>
+    </form>
+  </ul>
+  <!--留言表单结束--> 
+</section>
+
+<script>
+//ajax提交留言
+function submsg(obj){
+  var url='{pboot:msgaction}';
+  var contacts=$(obj).find("#contacts").val();
+  var mobile=$(obj).find("#mobile").val();
+  var content=$(obj).find("#content").val();
+  var checkcode=$(obj).find("#checkcode").val();
+  
+  $.ajax({
+    type: 'POST',
+    url: url,
+    dataType: 'json',
+    data: {
+      contacts: contacts,
+      mobile: mobile,
+      content: content,
+      checkcode: checkcode
+    },
+    success: function (response, status) {
+      if(response.code){
+     alert("谢谢您的反馈，我们会尽快联系您！");
+     $(obj)[0].reset(); 
+      }else{
+       alert(response.data);
+      }
+    },
+    error:function(xhr,status,error){
+      alert('返回数据异常！');
+    }
+  });
+  return false;
+}
+</script>
+<!--单页内容结束--> 
+{include file=foot.html}
+</body>
+</html>

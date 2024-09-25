@@ -1,0 +1,51 @@
+<!--栏目分类开始-->
+<div class="submenubox">
+    <div class="left_title"><s class="icon fr"></s>
+        <h3>{pboot:sort scode={sort:tcode}}[sort:name]{/pboot:sort}</h3>
+    </div>
+    <div class="submenu">
+        <ul class="list">
+            {pboot:nav num=10 parent={sort:tcode}}
+            {pboot:if('[nav:scode]'=='{sort:scode}')}
+            <li class='hover'>
+                <a href='[nav:link]' class='sub1'>[nav:name] <i></i></a></li>
+            {else}
+            <li><a href="[nav:link]" title="[nav:name]" class="sub1">[nav:name]<i></i></a> </li>
+            {/pboot:if}
+            {/pboot:nav}
+        </ul>
+    </div>
+</div>
+<!--栏目分类结束-->
+
+<!--推荐产品开始-->
+<div class="leftbox leftnews">
+    <div class="left_title">
+        <h3>推荐产品</h3>
+    </div>
+    <div class="leftprocomt clearfix">
+        <ul>
+            {pboot:list scode=5 num=4 order=sorting}
+            <li {pboot:if([list:i]%2==0)}style="margin:0;"{/pboot:if}>
+                <a href="[list:link]" title="[list:title]"><img src="[list:ico]" alt="[field:title/]">
+                    <p >[list:title lencn=7]</p>
+                </a></li>
+            {/pboot:list}
+        </ul>
+    </div>
+</div>
+<!--推荐产品结束-->
+
+<!--联系我们开始-->
+<div class="leftbox">
+    <div class="left_title">
+        <h3>联系我们</h3>
+    </div>
+    <div class="cont">
+        <div class="img"><img src="{pboot:companyweixin}" alt=""/></div>
+        <strong>邮箱：</strong>{pboot:companyemail}<br>
+        <strong>电话：</strong>{pboot:companyphone}<br>
+        <strong>地址：</strong>{pboot:companyaddress}
+        <a class="zx" href="http://wpa.qq.com/msgrd?v=3&uin={pboot:companyqq}&site=qq&menu=yes"><em class="icon"></em>在线咨询</a></div>
+</div>
+<!--联系我们结束-->

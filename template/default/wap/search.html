@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no" />
+<title>{pboot:pagetitle}</title>
+<meta name="keywords" content="{pboot:pagekeywords}" />
+<meta name="description" content="{pboot:pagedescription}" />
+<link href="{pboot:sitedomain}/m/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/m/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/m/skin/js/autofontsize.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/clipboard.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/common.js"></script>
+</head>
+<body>
+<!--顶部开始-->
+
+<header id="top_main" class="header">
+  <div id="top" class="clearfix"> <a id="topsearch" class="topsearch" href="javascrpt:;"></a> 
+    <!--搜索栏开始-->
+    <div id="search" class="clearfix">
+      <form role="search" action="{pboot:scaction}" method="get">
+        <input class="txt fl" type="text"  name="keyword" value="请输入关键字" onfocus="if(this.value==defaultValue)this.value=''" onblur="if(this.value=='')this.value=defaultValue">
+        <input class="btn fl icon" type="submit" value="搜索" name="">
+      </form>
+    </div>
+    <!--搜索栏结束--> 
+    <a class="logo" href="{pboot:sitedomain}/" title="{pboot:pagetitle}"> <img src="{pboot:sitedomain}/m/skin/images/logo.png" alt="{pboot:pagetitle}"></a>
+    <div id="nav" class="cur">
+      <p class="nav icon"></p>
+    </div>
+  </div>
+</header>
+<!--顶部结束--> 
+<!--右侧导航开始-->
+<nav class="subNav trans" id="subNav">
+  <div class="subNavCon">
+    <ul class="list">
+      <li><a href="{pboot:sitedomain}/"  title="网站首页">网站首页</a></li>
+      {pboot:nav num=10 parent=0}
+      <li><a href="[nav:link]" title="[nav:name]">[nav:name]</a></li>
+      {/pboot:nav}
+    </ul>
+  </div>
+</nav>
+<!--右侧导航结束--> 
+<!--位置开始-->
+<section class="cateList"> <span class="goBack iconbef" id="goBack"></span>
+  <h3>搜索页<s class="iconn"></s></h3>
+</section>
+<!--位置结束--> 
+<!--文章列表开始-->
+<section class="newsPage">
+  <div class="list-loop list clearfix"> {pboot:search num=12 order=sorting} <a class="loop item clearfix" href="[search:link]" title="[search:title]"><img class="img fl" src="[search:ico]" alt="[search:title]">
+    <h3 class="tit" >[search:title]</h3>
+    <p>[search:content drophtml=1 dropblank=1 len=50]</p>
+    <span class="time">时间：[search:date]</span></a> {/pboot:search} </div>
+  <div class="pglist"> {page:bar} </div>
+</section>
+<!--文章列表结束-->
+
+{include file=foot.html}
+</body>
+</html>

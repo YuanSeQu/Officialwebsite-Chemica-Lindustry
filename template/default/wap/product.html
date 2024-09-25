@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no" />
+<title>{content:title}-{pboot:sitetitle}</title>
+<meta name="keywords" content="{content:keywords}">
+<meta name="description" content="{content:description}">
+<link href="{pboot:sitedomain}/m/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/m/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/m/skin/js/autofontsize.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/clipboard.min.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/common.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/jquery.tips.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/jquery.validator.js"></script>
+<script src="{pboot:sitedomain}/m/skin/js/touchslide.1.1.js"></script>
+</head>
+<body>
+{include file=head.html} 
+<!--位置开始--> 
+{include file=left.html} 
+<!--位置结束--> 
+<!--图片内容开始-->
+<section class="content showInfo">
+<h1 class="showtit showtit2">{content:title}</h1>
+<!--组图开始-->
+<div class="imgtog" id="imgtog">
+  <div class="bd">
+    <ul class="list"> 
+      {pboot:pics id={content:id}}   
+      <li class="item"><a href="javascript:;"><img src="[pics:src]" alt="[pics:title]"></a></li>     
+      {/pboot:pics}
+    </ul>
+  </div>
+  <div class="hd">
+    <ul>
+      {pboot:pics id={content:id}}
+      <li></li>
+      {/pboot:pics}
+    </ul>
+  </div>
+</div>
+<!--组图结束--> 
+<script type="text/javascript">
+		TouchSlide({ 
+			slideCell:"#imgtog",
+			titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell:".bd ul", 
+			effect:"leftLoop", 
+			autoPage:true,//自动分页
+			autoPlay:true //自动播放
+		});
+</script>
+<div class="showTab">
+  <div class="title2">
+    <h3>产品介绍</h3>
+    <s></s></div>
+</div>
+<div class="showContxt">
+  <div class="txtcon">
+    <p>{content:content}</p>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="reLink clearfix">
+  <div class="prevLink fl">上一篇：{content:precontent}</div>
+  <div class="nextLink fl">下一篇：{content:nextcontent}</div>
+</div>
+</section>
+{include file=foot.html}
+</body>
+</html>

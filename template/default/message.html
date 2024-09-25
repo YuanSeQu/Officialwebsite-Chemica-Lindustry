@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>{sort:title}</title>
+<meta name="keywords" content="{sort:keywords}">
+<meta name="description" content="{sort:description}">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+<link href="{pboot:sitedomain}/skin/css/bootstrap.min.css" rel="stylesheet" >
+<link href="{pboot:sitedomain}/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/aos.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/skin/js/jquery.superslide.2.1.1.js"></script>
+<script src="{pboot:sitedomain}/skin/js/common.js"></script>
+</head>
+<body>
+{include file=comm/head.html}
+
+{include file=comm/top.html}
+<div class="wrapper">
+  <div class="w1200 clearfix">
+    <div class="left fl"> {include file=comm/left.html} </div>
+    <!--文章内容开始-->
+    <div class="right fr">
+      <div class="right_title clearfix">
+        <div class="sitepath fr"> <em class="home icon"></em>{pboot:position separator='>'}</div>
+        <h3>{content:title}</h3>
+      </div>
+      
+      <!-- 留言表单 -->
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-lg-9">
+          <form class="my-4" onsubmit="return submsg(this);">
+            <div class="form-group">
+              <label for="contacts">联系人</label>
+              <div>
+                <input type="text" name="contacts" required id="contacts" class="form-control" placeholder="请输入联系人">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mobile">手　机</label>
+              <div>
+                <input type="text" name="mobile" required id="mobile" class="form-control" placeholder="请输入联系人手机">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="content" >内　容</label>
+              <div>
+                <textarea name="content" id="content" class="form-control" placeholder="请输入留言内容"></textarea>
+              </div>
+            </div>
+            {if([$config.message_check_code])}
+            <div class="form-group">
+              <label for="checkcode">验证码</label>
+              <div class="row">
+                <div class="col-6">
+                  <input type="text" name="checkcode" required id="checkcode" class="form-control" placeholder="请输入验证码">
+                </div>
+                <div class="col-6"> <img title="点击刷新" style="height:33px;" src="{pboot:checkcode}" onclick="this.src='{pboot:checkcode}?'+Math.round(Math.random()*10);" /> </div>
+              </div>
+            </div>
+            {/if}
+            <div class="form-group">
+              <button type="submit" class="btn1 btn-info mb-2">提交留言</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+
+//ajax提交留言
+function submsg(obj){
+  var url='{pboot:msgaction}';
+  var contacts=$(obj).find("#contacts").val();
+  var mobile=$(obj).find("#mobile").val();
+  var content=$(obj).find("#content").val();
+  var checkcode=$(obj).find("#checkcode").val();
+  
+  $.ajax({
+    type: 'POST',
+    url: url,
+    dataType: 'json',
+    data: {
+    	contacts: contacts,
+    	mobile: mobile,
+    	content: content,
+    	checkcode: checkcode
+    },
+    success: function (response, status) {
+      if(response.code){
+		 alert("谢谢您的反馈，我们会尽快联系您！");
+		 $(obj)[0].reset(); 
+      }else{
+    	 alert(response.data);
+      }
+    },
+    error:function(xhr,status,error){
+      alert('返回数据异常！');
+    }
+  });
+  return false;
+}
+</script> 
+{include file=comm/foot.html}
+</body>
+</html>

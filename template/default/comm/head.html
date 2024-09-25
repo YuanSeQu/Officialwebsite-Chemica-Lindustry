@@ -1,0 +1,42 @@
+<!--顶部开始-->
+<div class="header_main">
+  <div class="header w1200 clearfix">
+    <ul class="ksdh fr">
+      <li class="lxwm"> <s class="icon"></s>{pboot:sort scode=11}<a href="[sort:link]" title="联系我们">联系我们</a>{/pboot:sort}</li>
+      <span>|</span>
+      <li> <a class="mobile" href="javascript:;"> <s class="icon"></s>微信 </a>
+        <div class="imgbox"> <img src="{pboot:companyweixin}" alt="扫一扫 联系我们"/>
+          <p> <b>微信号：{label:weixinhao}</b>扫一扫 联系我们 </p>
+        </div>
+      </li>
+    </ul>
+    <span>{label:welcome}</span> </div>
+</div>
+<!--顶部结束--> 
+<!--头部开始-->
+<div class="top_main">
+  <div class="top w1200 clearfix">
+    <div class="logo fl" aos="fade-right" aos-easing="ease" aos-duration="700"> <a href="{pboot:sitedomain}/" title="{pboot:companyname}"> <img src="{pboot:sitelogo}" alt="{pboot:companyname}"> </a> </div>
+    <div class="webtel fr" aos="fade-left" aos-easing="ease" aos-duration="700"> <span class="icon"></span> <b>{pboot:companyphone}</b> </div>
+  </div>
+  <!--导航开始-->
+  <div id="nav" class="nav">
+    <ul class="navlist w1200 clearfix">
+      <li id="cur"  {pboot:if(0=='{sort:scode}')}class="hover"{/pboot:if}><a href="{pboot:sitedomain}/" title="网站首页">网站首页</a></li>
+      {pboot:nav num=10 parent=0}
+      <li class='{pboot:if('[nav:scode]'=='{sort:tcode}')}hover{/pboot:if}'>
+      <a href="[nav:link]" title="[nav:name]">[nav:name]</a>
+      <div class="subnav"> {pboot:if([nav:soncount]>0)}
+        {pboot:2nav num=10 parent=[nav:scode]} <a href="[2nav:link]" title="[2nav:name]">[2nav:name]</a> {/pboot:2nav}
+        {/pboot:if} </div>
+      </li>
+      {/pboot:nav}
+    </ul>
+  </div>
+  <!--导航结束--> 
+</div>
+<!--头部结束--> 
+
+<!--占位导航栏--> 
+<!--<div style="height:71px;" class="head-sm-height"></div>--> 
+

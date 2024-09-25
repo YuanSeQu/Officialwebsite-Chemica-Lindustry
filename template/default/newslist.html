@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>{sort:title}</title>
+<meta name="keywords" content="{sort:keywords}">
+<meta name="description" content="{sort:description}">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+<link href="{pboot:sitedomain}/skin/css/bootstrap.min.css" rel="stylesheet" >
+<link href="{pboot:sitedomain}/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/aos.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/common.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/skin/js/jquery.js"></script>
+<script src="{pboot:sitedomain}/skin/js/jquery.superslide.2.1.1.js"></script>
+<script src="{pboot:sitedomain}/skin/js/common.js"></script>
+</head>
+<body>
+{include file=comm/head.html}
+
+{include file=comm/top.html}
+
+<div class="wrapper">
+	<div class="w1200 clearfix">
+	<div class="left fl">
+		{include file=comm/left.html}
+	</div>
+		<div class="right fr">
+			<div class="right_title clearfix">
+				<div class="sitepath fr"> <em class="home icon"></em>{pboot:position separator='>'} </div>
+				<h3>{sort:name}</h3>
+			</div>
+			<!--文章列表开始-->
+			<div class="cont thumblist1">
+				<ul class="list clearfix">
+					{pboot:list num=8 order=sorting}
+					<li class="item clearfix">
+						<a class="img fl" href="[list:link]" title="[list:title]">
+							<img src="[list:ico]" alt="[list:title]">
+						</a>
+						<a class="txt fr" href="[list:link]" title="[list:title]">
+						<h3 >[list:title lencn=30]</h3>
+						<p class="desc">[list:content drophtml=1 dropblank=1 lencn=90]...</p>
+						<span>
+							<em class="time icon"></em>时间：[list:date style=Y-m-d]
+						</span>
+						<span>
+							<em class="liu icon"></em>浏览量：[list:visits]
+						</span>
+						</a>
+					</li>
+					{/pboot:list}
+				</ul>
+				<!--分页样式-->
+				<div class="pglist">{include file=comm/page.html}</div>
+			</div>
+			<!--文章列表结束-->
+		</div>
+	</div>
+</div>
+<!--页尾开始-->
+{include file=comm/foot.html}
+</body>
+</html>
