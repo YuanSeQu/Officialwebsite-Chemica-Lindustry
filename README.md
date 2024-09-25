@@ -22,10 +22,8 @@
 ![输入图片说明](https://gitee.com/apehub/ChemicalIndustry/raw/master/1727281047829.jpg)
 
 # 配套资料
-需要开发手册请访问这里 https://www.pbootcms.com/docs/
-
-# 系统免费域名授权
-PbootCMS：https://www.pbootcms.com/freesn/
+需要开发手册请访问这里 https://www.pbootcms.com/docs/<br/>
+PbootCMS系统免费域名授权：https://www.pbootcms.com/freesn/<br/>
 
 
 # 关于我们
