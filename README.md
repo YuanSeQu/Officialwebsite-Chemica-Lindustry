@@ -18,26 +18,26 @@
 * 不定期gitee和github官网号更新免费全开源模板，有兴趣请帮点一下 **Star** 哦
 * **客服微信：yuansequ 有技术交流群可以联系客服加入，长期有资深开发者提供答疑**
 
+![输入图片说明](https://gitee.com/apehub/ChemicalIndustry/raw/master/kefu.jpg)
+
+
 # 增值服务介绍
 * 更多高级源码和商务合作可以联系淘宝小店链接：https://shop398787089.taobao.com/
 * 500套高级源码可以选购，更多案例查看：https://kdocs.cn/l/ceE9t0WJiSaH
 * 猿社区有强大的开发者与产品经理社区支持，可以联系客服加入，目前已有100+的伙伴加入我们，平时也有开源项目组队
+
 
 # 定制服务
 * 如有私人定制需求，可以联系猿社区淘宝客服，我们的客服会及时回复哒
 * UI设计/页面开发收取200一个页面的辛苦费，我们会给您安排适合的猿社区内小伙伴为您服务，不满意可以换人
 * 任何需求都可以解决，可以联系淘宝客服大胆的提需求
 
-![输入图片说明](https://cloud.gyjerp.com/static/android-code.png)
-![输入图片说明](https://cloud.gyjerp.com/static/iphone-code.png)
-![输入图片说明](https://cloud.gyjerp.com/static/weixin-code.png)
-
 # 配套资料
 * 需要开发手册请访问这里 https://www.pbootcms.com/docs/
 
 
 # 系统图片
-![输入图片说明](jshERP-web/public/static/screenshot/1.jpg)
+![输入图片说明](https://gitee.com/apehub/ChemicalIndustry/raw/master/1727281047829.jpg)
 
 
 # 系统免费域名授权
