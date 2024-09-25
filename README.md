@@ -1,4 +1,19 @@
-# 项目总述
+# 项目介绍
+* 营销型化工材料环保企业网站pbootcms模板源码带手机端
+* 兼容电脑、手机等设备，同一个后台，数据即时同步，简单适用，附带测试数据，安装后和演示站一样，该模板适用于各行业，只需把预设栏目和文字稍作修改即可作为其他类型的网站使用。
+* 将下载下来的模板直接上传服务器，网站效果和演示站一样，采用开源免费的PHP企业网站开发建设管理系统，后台操作简单，安装非常方便，更适合新手朋友，可免费协助指导使用及安装！
+* 默认后台地址：你的域名/admin.php 
+* 登录账号：admin     登录密码：admin
+* PHP程序（php≥7.0，＜8.0），安全、稳定、快速；SEO框架布局，栏目及文章页均可独立设置标题/关键词/描述，用低成本获取源源不断订单！
+* 演示地址：http://demo.bang-dun.com/web/p430/
+
+# 模板特点
+* ①、采用pc加手机端设计，风格大气，可在手机端适配，适用于多数企业。
+* ②、网站目录深度做过优化，模板带xml网站地图，更利于SEO优化推广。
+* ③、SEO框架布局，栏目及文章页均可独立设置标题/关键词/描述。
+* ④、网站后台可直接修改联系方式、地址、版权信息，统计代码等，修改更加方便。
+
+# 关于我们
 * 猿社区ApeHub，专为外贸企业与初创企业提供独立站解决方案社区。我们汇聚技术精英，提供前沿的底层建设方案，助力微创/出海企业构建高效、安全的网站
 * 不定期gitee和github官网号更新免费全开源模板，有兴趣请帮点一下 **Star** 哦
 * **客服微信：yuansequ 有技术交流群可以联系客服加入，长期有资深开发者提供答疑**
@@ -17,75 +32,13 @@
 ![输入图片说明](https://cloud.gyjerp.com/static/iphone-code.png)
 ![输入图片说明](https://cloud.gyjerp.com/static/weixin-code.png)
 
-
-
-# 开发初衷
-* 管伊佳ERP立志为中小企业提供开源好用的ERP软件，降低企业的信息化成本
-* 个人开发者也可以使用管伊佳ERP进行二次开发，加快完成开发任务
-* 初学JAVA的小伙伴可以下载源代码来进行学习交流
-
-# 技术框架
-* 核心框架：SpringBoot 2.0.0
-* 持久层框架：Mybatis 1.3.2
-* 日志管理：SLF4J 1.7
-* 前端框架：Vue 2.6.10
-* UI框架: Ant-Design-Vue 1.5.2
-* 模板框架: Jeecg-Boot 2.2.0
-* 项目管理框架: Maven 3.2.3
-
-# 开发环境
-建议开发者使用以下环境，可以避免版本带来的问题
-* IDE: IntelliJ IDEA 2019.2+和JetBrains WebStorm 2019.3+
-* DB: Mysql 5.7.33
-* JDK: JDK 1.8
-* Node: Node 16.16.0
-* Maven: Maven 3.2.3+
-* Redis: 6.2.1
-* Nginx: 1.12.2 
-
-# 服务器环境
-* 数据库：Mysql5.7.33
-* JAVA平台：JRE1.8
-* Redis库：redis6.2.1
-* Nginx代理：nginx1.12.2
-* 操作系统：Windows、Linux等
-
 # 配套资料
-* 需要用户手册请访问这里 https://www.gyjerp.com/thread-393-1-1.html
-* 需要接口文档请查看这里 http://www.gyjerp.com/thread-428-1-1.html
-* 喜欢视频教程可以看这里 https://space.bilibili.com/540003552/channel/series 
-* 为方便大家搭建运行环境，分享了下载地址 https://pan.baidu.com/s/1jlild9uyGdQ7H2yaMx76zw  提取码:814g
-* 不会打包的小伙伴，请下载此打包后的文件 https://share.weiyun.com/NDJNLhry 密码：vd3aig
-* 不会部署的小伙伴，请参考部署教程 http://www.gyjerp.com/thread-177-1-1.html
-* 部署后登录系统的默认租户账号：jsh，默认超管账户：admin，默认密码均为：123456
+* 需要开发手册请访问这里 https://www.pbootcms.com/docs/
 
-# 开源说明
-* 本系统100%开源，遵守GPL-3.0协议
 
-# 系统美图
-* 首页
+# 系统图片
 ![输入图片说明](jshERP-web/public/static/screenshot/1.jpg)
-* 零售管理
-![输入图片说明](jshERP-web/public/static/screenshot/2.jpg)
-* 采购管理
-![输入图片说明](jshERP-web/public/static/screenshot/3.jpg)
-* 销售管理
-![输入图片说明](jshERP-web/public/static/screenshot/4.jpg)
-* 仓库管理
-![输入图片说明](jshERP-web/public/static/screenshot/5.jpg)
-* 财务管理
-![输入图片说明](jshERP-web/public/static/screenshot/6.jpg)
-* 报表查询
-![输入图片说明](jshERP-web/public/static/screenshot/7.jpg)
-* 商品管理
-![输入图片说明](jshERP-web/public/static/screenshot/8.jpg)
-* 基本资料
-![输入图片说明](jshERP-web/public/static/screenshot/9.jpg)
-* 系统管理
-![输入图片说明](jshERP-web/public/static/screenshot/10.jpg)
 
-# 如何支持
-* 开源不易，坚持更难！如果您觉得管伊佳ERP不错，不用请作者喝咖啡。
-* 您可以将我们的云平台地址：https://cloud.gyjerp.com 发给您的家人或朋友，只要是开店的、办厂的、做批发的都可以用得上。
-* 您可以到我们自营的拼多多商城进行支持：https://mobile.pinduoduo.com/mall_page.html?mall_id=375313371
-* 以上将是对我们开源最大的支持！在此表示感谢！
+
+# 系统免费域名授权
+* PbootCMS：https://www.pbootcms.com/freesn/
